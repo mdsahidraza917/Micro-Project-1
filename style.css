@@ -44,24 +44,25 @@ footer {
     background-color: #282828;
     width: 100%;
     display: flex;
-    justify-content: center;
-    padding: 20px 0;
+    justify-content: space-between; 
+    padding: 20px 10%;
     flex-wrap: wrap;
 }
 
 .List {
     color: #FFFFFF;
-    width: 100%;
+    width: 45%; 
     display: flex;
     flex-direction: column;
     padding-top: 20px;
-    text-align: center;
 }
 
-.List1,
+.List1 {
+    align-items: flex-start; 
+}
 .List2 {
-    width: 50%;
-    text-align: center;
+    align-items: flex-end; /* Aligns text to the right */
+    text-align: right;
 }
 
 h1 {
@@ -147,12 +148,18 @@ li {
     footer {
         flex-direction: column;
         padding: 10px;
+        text-align: center;
+    }
+    .List {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
     }
 
-    .List1,
-    .List2 {
-        width: 100%;
-        padding: 0;
+    .List1, .List2 {
+        align-items: center;
+        text-align: center;
     }
 
     .para1, .para2, .para3 {
